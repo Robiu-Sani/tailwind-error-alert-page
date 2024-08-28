@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Alert</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center py-10 px-2 min-h-screen">
+    <div class="max-w-4xl bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-3xl font-bold text-red-600 mb-4">⚠️ Server Error Alert!</h1>
+        <p class="text-gray-700 mb-6">The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+        
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Error Details:</h2>
+        <ul class="list-disc list-inside mb-6 text-gray-600">
+            <li>Time: <strong>2024-08-28 10:45 AM</strong></li>
+            <li>Error Code: <strong>500 - Internal Server Error</strong></li>
+            <li>Server: <strong>web-server-01</strong></li>
+            <li>IP Address: <strong>192.168.1.1</strong></li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Error Log Summary:</h2>
+        <table class="min-w-full bg-white border border-gray-300 mb-6">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="py-2 px-4 border-b">Timestamp</th>
+                    <th class="py-2 px-4 border-b">Error Message</th>
+                    <th class="py-2 px-4 border-b">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2 px-4 border-b">2024-08-28 10:40 AM</td>
+                    <td class="py-2 px-4 border-b">Database connection failed</td>
+                    <td class="py-2 px-4 border-b text-red-500">Critical</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">2024-08-28 10:35 AM</td>
+                    <td class="py-2 px-4 border-b">API response timeout</td>
+                    <td class="py-2 px-4 border-b text-yellow-500">Warning</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">2024-08-28 10:30 AM</td>
+                    <td class="py-2 px-4 border-b">Server overload detected</td>
+                    <td class="py-2 px-4 border-b text-yellow-500">Warning</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-700 p-4">
+            <p class="font-bold">Stay Calm, We've Got This!</p>
+            <p>Our team is working on resolving the issue. Please bear with us while we bring everything back to normal.</p>
+        </div>
+    </div>
+</body>
+</html>
